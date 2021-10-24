@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+
+
     <div class="wrapper">
         <header class="header" id="home">
             <div class="header__logo">
@@ -33,11 +36,10 @@
                 <h1>Моё тестовое задание на Веб-разработчика.</h1>
                 <p>Для этого мне нужно сверстать этот макет и убедиться самому,
                     способен ли я на эту профессию или нет. Проще простого.</p>
-                <button class="intro__titel_btn">Get Started <span class="intro__titel_btn-shadow"></span></button>
+                <button class="intro__titel_btn btn">Get Started <span class="intro__titel_btn-shadow"></span></button>
             </div>
             <div class="intro__img"><img src="img/illustration.svg" alt="geek"></div>
         </section>
-
         <section class="statistics">
             <span class="statistics__shadow"></span>
             <div class="stat">
@@ -66,7 +68,6 @@
                 </div>
             </div>
         </section>
-
         <section class="services" id="services">
             <div class="services__img"><img src="img/firework.svg" alt=""></div>
             <div class="services__text">
@@ -130,16 +131,15 @@
                 <a class="rate__item_btn button">Select<span></span></a>
             </div>
         </section>
-
         <section class="heading">
             <h2 class="heading__titel">Нам доверяют тысяча
                 довольных клиентов</h2>
             <p class="heading__subtitel">These are the stories of our customers who have joined us with great pleasure
                 when using this crazy feature.</p>
         </section>
-        <section class="slider" id="reviews">
-            <div class="slider__body">
-                <div class="slider__item item" id="1">
+        <section class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__item item">
                     <div class="item__name">
                         <img src="img/photo1.jpg" alt="">
                         <div>
@@ -154,7 +154,8 @@
                             there have been no problems. LaslesVPN always the best”.</p>
                     </div>
                 </div>
-                <div class="slider__item item" id="2">
+
+                <div class="slider__item item">
                     <div class="item__name">
                         <img src="img/photo2.jpg" alt="">
                         <div>
@@ -167,7 +168,8 @@
                         <p>“I like it because I like to travel far and still can connect with high speed.”.</p>
                     </div>
                 </div>
-                <div class="slider__item item" id="3">
+
+                <div class="slider__item item">
                     <div class="item__name">
                         <img src="img/photo3.jpg" alt="">
                         <div class="item__name_text">
@@ -181,7 +183,8 @@
                             has high security.”.</p>
                     </div>
                 </div>
-                <div class="slider__item item" id="4">
+
+                <div class="slider__item item">
                     <div class="item__name">
                         <img src="img/photo1.jpg" alt="">
                         <div>
@@ -196,50 +199,68 @@
                             there have been no problems. LaslesVPN always the best”.</p>
                     </div>
                 </div>
-                <div class="slider__item item" id="5">
-                    <div class="item__name">
-                        <img src="img/photo2.jpg" alt="">
-                        <div>
-                            <h4>Yessica Christy</h4>
-                            <p>Shanxi, China</p>
-                        </div>
-                        <p class="item__name_score">4.5 <img src="img/star.svg" alt="star"></p>
-                    </div>
-                    <div class="item__text">
-                        <p>“I like it because I like to travel far and still can connect with high speed.”.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__nav">
-                <div class="dots-wrapper">
-                    <a href="#1" class="dot active"></a>
-                    <a href="#2" class="dot"></a>
-                    <a href="#3" class="dot"></a>
-                    <a href="#4" class="dot"></a>
-                    <a href="#5" class="dot"></a>
-                </div>
-                <div class="slider__arrow">
-                    <div id="btn-prev">
-                        <svg class="icon-right" width="20" height="18" viewBox="0 0 20 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.75 7.74998H3.925L8.4625 2.29998C8.67467 2.04471 8.77675 1.71561 8.74628 1.38507C8.7158 1.05454 8.55527 0.749652 8.3 0.537478C8.04473 0.325305 7.71563 0.223228 7.3851 0.253702C7.05456 0.284177 6.74967 0.444708 6.5375 0.699979L0.2875 8.19998C0.245451 8.25963 0.207849 8.3223 0.175 8.38748C0.175 8.44998 0.175 8.48748 0.0875002 8.54998C0.0308421 8.6933 0.0011764 8.84587 0 8.99998C0.0011764 9.15409 0.0308421 9.30665 0.0875002 9.44998C0.0875002 9.51248 0.0874998 9.54998 0.175 9.61248C0.207849 9.67765 0.245451 9.74032 0.2875 9.79998L6.5375 17.3C6.65503 17.4411 6.8022 17.5546 6.96856 17.6323C7.13491 17.7101 7.31636 17.7503 7.5 17.75C7.79207 17.7505 8.07511 17.6488 8.3 17.4625C8.42657 17.3575 8.5312 17.2287 8.60789 17.0832C8.68458 16.9378 8.73183 16.7787 8.74692 16.6149C8.76202 16.4512 8.74466 16.2861 8.69586 16.1291C8.64705 15.9721 8.56775 15.8263 8.4625 15.7L3.925 10.25H18.75C19.0815 10.25 19.3995 10.1183 19.6339 9.88386C19.8683 9.64944 20 9.3315 20 8.99998C20 8.66846 19.8683 8.35052 19.6339 8.1161C19.3995 7.88167 19.0815 7.74998 18.75 7.74998Z"
-                                fill="#F53838" />
-                        </svg>
-                    </div>
-                    <div id="btn-next">
-                        <svg class="icon-left" width="20" height="18" viewBox="0 0 20 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.75 7.74998H3.925L8.4625 2.29998C8.67467 2.04471 8.77675 1.71561 8.74628 1.38507C8.7158 1.05454 8.55527 0.749652 8.3 0.537478C8.04473 0.325305 7.71563 0.223228 7.3851 0.253702C7.05456 0.284177 6.74967 0.444708 6.5375 0.699979L0.2875 8.19998C0.245451 8.25963 0.207849 8.3223 0.175 8.38748C0.175 8.44998 0.175 8.48748 0.0875002 8.54998C0.0308421 8.6933 0.0011764 8.84587 0 8.99998C0.0011764 9.15409 0.0308421 9.30665 0.0875002 9.44998C0.0875002 9.51248 0.0874998 9.54998 0.175 9.61248C0.207849 9.67765 0.245451 9.74032 0.2875 9.79998L6.5375 17.3C6.65503 17.4411 6.8022 17.5546 6.96856 17.6323C7.13491 17.7101 7.31636 17.7503 7.5 17.75C7.79207 17.7505 8.07511 17.6488 8.3 17.4625C8.42657 17.3575 8.5312 17.2287 8.60789 17.0832C8.68458 16.9378 8.73183 16.7787 8.74692 16.6149C8.76202 16.4512 8.74466 16.2861 8.69586 16.1291C8.64705 15.9721 8.56775 15.8263 8.4625 15.7L3.925 10.25H18.75C19.0815 10.25 19.3995 10.1183 19.6339 9.88386C19.8683 9.64944 20 9.3315 20 8.99998C20 8.66846 19.8683 8.35052 19.6339 8.1161C19.3995 7.88167 19.0815 7.74998 18.75 7.74998Z"
-                                fill="#F53838" />
-                        </svg>
-                    </div>
-                </div>
 
             </div>
+            <div class="slider__nav">
+            </div>
+
         </section>
     </div>
+    <section class="questions">
+        <div class="questions__wrapper">
+            <div>
+                <h2 class="questions__text_titel titel">Возникли вопросы, нужна помощь?</h2>
+                <p class="questions__text_subtitel subtitel">Оставьте свои контакты, мы свяжемся с вами и предложим
+                    наимлучшие решения</p>
+
+                <form class="form" id="form" name="form">
+                    <div class="questions__form">
+                        <input class="questions__form_name" type="text" name="name" placeholder="Ваше Имя*" required />
+                        <input class="questions__form_phone" type="tel" name="phone" placeholder="Телефон*" required />
+                    </div>
+
+                    <div class="questions__checkbox">
+                        <div>
+                            <input class="custom-checkbox" type="checkbox" id="consent" name="consent" value="yes"
+                                required />
+                            <label for="consent">
+                                <div class="questions__checkbox_text">
+                                    Я согласен(-а) на обработку своих<br>
+                                    <a href="#"> персональных данных</a>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="questions__btn btn ">Отправить заявку</button>
+                </form>
+            </div>
+            <div>
+                <img src="img/faq.svg" alt="FAQ">
+            </div>
+        </div>
+    </section>
+    <!-- ---------------Popap-------------------- -->
+
+
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup">
+            <a class="close-button js-close-thank-you">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="#C4C4C4" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.0711 1.07107C15.4007 1.40073 15.3691 1.97574 15.0155 2.40362L14.9282 2.49957L9.28565 8.14214L14.9282 13.7847C15.3621 14.2186 15.4261 14.8582 15.0711 15.2132C14.7414 15.5429 14.1664 15.5113 13.7385 15.1577L13.6426 15.0704L8 9.42778L2.35743 15.0704C1.92351 15.5043 1.28395 15.5682 0.928932 15.2132C0.599269 14.8835 0.630867 14.3085 0.984481 13.8807L1.07178 13.7847L6.71435 8.14214L1.07178 2.49957C0.637866 2.06565 0.57391 1.42609 0.928932 1.07107C1.2586 0.741404 1.8336 0.773003 2.26148 1.12662L2.35743 1.21392L8 6.85649L13.6426 1.21392C14.0765 0.780002 14.716 0.716046 15.0711 1.07107Z"
+                        fill="#C4C4C4" />
+                </svg>
+            </a>
+            <img src="img/big-arrow.svg" alt="arrow">
+            <h4>Благодарим!</h4>
+            <p>Совсем скоро мы свяжемся с Вами!</p>
+        </div>
+    </div>
+
+
+    <!-- ---------------end-Popap-------------------- -->
+
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__description">
@@ -247,9 +268,27 @@
                 <p><span class="color">LaslesVPN</span> is a private virtual network that has unique features and has
                     high security.</p>
                 <div class="footer__contacts">
-                    <a href="#"><img class="footer__contacts_bg" src="img/facebook.svg" alt=""></a>
-                    <a href="#"><img class="footer__contacts_bg" src="img/twitter.svg" alt=""></a>
-                    <a href="#"><img class="footer__contacts_bg" src="img/instagram.svg" alt=""></a>
+                    <a href="#" class="footer__contacts_bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9px" height="16px" viewBox="0 0 0.26 0.47">
+                            <path
+                                d="M0.26 0.08l-0.07 0c-0.01,0 -0.02,0.01 -0.02,0.03l0 0.05 0.09 0 -0.01 0.08 -0.08 0 0 0.23 -0.09 0 0 -0.23 -0.08 0 0 -0.08 0.08 0 0 -0.04c0,-0.07 0.04,-0.12 0.11,-0.12l0.07 0 0 0.08z"
+                                fill="#F17777" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__contacts_bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="13px" viewBox="0 0 0.81 0.66">
+                            <path
+                                d="M0.72 0.16c0,0.01 0,0.02 0,0.02 0,0.22 -0.16,0.48 -0.47,0.48 -0.09,0 -0.17,-0.03 -0.25,-0.08 0.01,0 0.03,0 0.04,0 0.08,0 0.15,-0.02 0.2,-0.07 -0.03,0 -0.06,-0.01 -0.09,-0.03 -0.03,-0.02 -0.05,-0.05 -0.06,-0.08 0.03,0 0.05,0 0.08,-0.01 -0.04,0 -0.08,-0.02 -0.1,-0.05 -0.02,-0.03 -0.04,-0.07 -0.04,-0.11l0 0c0.02,0.01 0.05,0.02 0.08,0.02 -0.04,-0.02 -0.06,-0.06 -0.07,-0.1 -0.01,-0.04 -0.01,-0.08 0.02,-0.12 0.04,0.05 0.09,0.09 0.15,0.12 0.06,0.03 0.12,0.05 0.19,0.05 -0.01,-0.03 -0.01,-0.07 0.01,-0.1 0.01,-0.04 0.04,-0.06 0.07,-0.08 0.03,-0.02 0.07,-0.02 0.11,-0.02 0.03,0.01 0.06,0.03 0.09,0.05 0.04,0 0.07,-0.02 0.1,-0.04 -0.01,0.04 -0.03,0.07 -0.07,0.09 0.03,0 0.07,-0.01 0.1,-0.02 -0.03,0.03 -0.05,0.06 -0.09,0.08l0 0z"
+                                fill="#F17777" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__contacts_bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 0.82 0.82">
+                            <path
+                                d="M0.82 0.72c0,0.05 -0.05,0.1 -0.1,0.1l-0.63 0c-0.05,0 -0.09,-0.05 -0.09,-0.1l0 -0.63c0,-0.05 0.04,-0.09 0.09,-0.09l0.63 0c0.05,0 0.1,0.04 0.1,0.09l0 0.63zm-0.17 -0.31c0,0.06 -0.02,0.12 -0.07,0.17 -0.05,0.05 -0.11,0.07 -0.17,0.07 -0.07,0 -0.13,-0.02 -0.18,-0.07 -0.04,-0.05 -0.07,-0.11 -0.07,-0.17 0,-0.02 0,-0.03 0.01,-0.04l-0.09 0 0 0.32c0,0.03 0.02,0.04 0.04,0.04l0.57 0c0.01,0 0.02,0 0.03,-0.01 0.01,-0.01 0.01,-0.02 0.01,-0.03l0 -0.32 -0.08 0c0,0.01 0,0.02 0,0.04zm-0.24 0.16c0.02,0 0.04,0 0.06,-0.01 0.02,-0.01 0.04,-0.02 0.05,-0.04 0.02,-0.01 0.03,-0.03 0.04,-0.05 0.01,-0.02 0.01,-0.04 0.01,-0.06 0,-0.02 0,-0.04 -0.01,-0.06 -0.01,-0.02 -0.02,-0.04 -0.04,-0.06 -0.01,-0.01 -0.03,-0.02 -0.05,-0.03 -0.02,-0.01 -0.04,-0.02 -0.06,-0.02 -0.05,0 -0.09,0.02 -0.12,0.05 -0.03,0.03 -0.05,0.07 -0.05,0.12 0,0.04 0.02,0.08 0.05,0.11 0.03,0.03 0.07,0.05 0.12,0.05zm0.19 -0.33l0.1 0c0.01,0 0.01,-0.01 0.02,-0.01 0,-0.01 0.01,-0.01 0.01,-0.02l0 -0.1c0,0 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.01,-0.01 -0.02,-0.01l-0.1 0c0,0 -0.01,0 -0.01,0.01 -0.01,0 -0.01,0.01 -0.01,0.01l0 0.1c0,0.02 0.01,0.03 0.02,0.03z"
+                                fill="#F17777" />
+                        </svg>
+                    </a>
                 </div>
                 <p class="footer__contacts_copyright">©2021LaslesVPN</p>
             </div>
@@ -264,7 +303,7 @@
                     <a class="link" href="#">Blog</a>
                 </div>
                 <div class="footer__link">
-                    <h4 class="footer__link_titel" href="#">Engage</h4>
+                    <h4 class="footer__link_titel">Engage</h4>
                     <a class="footer__link_engage" href="#">LaslesVPN ? </a>
                     <a class="footer__link_engage" href="#">FAQ</a>
                     <a class="footer__link_engage" href="#">Tutorials</a>
@@ -280,7 +319,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="plugins/jquery-maskedinput/jquery.maskedinput.js"></script>
 </body>
 
 </html>
